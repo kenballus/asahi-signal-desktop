@@ -26,11 +26,11 @@ git pull origin main
 git checkout "v$1"
 sed -i 's/"deb"$/"rpm"/' package.json
 
-npm install
-npm run clean-transpile
-npm run generate
-npm run prepare-beta-build
-npm run build-linux
+pnpm install
+pnpm run clean-transpile
+pnpm run generate
+pnpm run prepare-beta-build
+pnpm run build-linux
 
 cd ..
 "$SUDO" dnf install "./Signal-Desktop/release/signal-desktop-$1.aarch64.rpm"

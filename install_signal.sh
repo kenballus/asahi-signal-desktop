@@ -33,5 +33,5 @@ pnpm run prepare-beta-build
 pnpm run build-linux
 
 cd ..
-"$SUDO" dnf install "./Signal-Desktop/release/signal-desktop-$1.aarch64.rpm"
+"$SUDO" dnf install "./Signal-Desktop/release/signal-desktop_$1_aarch64.rpm"
 rm -rf Signal-Desktop
